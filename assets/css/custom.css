@@ -1,0 +1,161 @@
+:root {
+	font-size: 16px;
+}
+
+body {
+	word-break: keep-all; 
+	margin: 0;
+	padding: 0;
+	background-color: #EAECEE;
+}
+
+#dataContainer {
+	display: none;
+}
+
+.navCustom {
+	background-color: steelblue;
+}
+
+.txtboxItem {
+    height: 2em;
+    font-size:1rem;
+}
+
+.logoImage {
+	border-radius: 1px;
+	width: 26px;
+	height: 26px;
+}
+
+.siDe {
+	font-size: 0.9rem;
+}
+
+.navProfilePicture {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	float: right;
+
+}
+
+.navProfileName {
+	font-size: 0.95rem;
+	color: white;
+	font-weight: bolder;
+}
+
+.navIcons {
+	color: white;
+	cursor: pointer;
+}
+
+.rowStyle {
+	box-shadow: 0 1px 1px 0 grey;
+}
+
+.coverDetails {
+	max-height: 300px;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.profilePhoto {
+	border: 0.5vw solid white;
+	box-shadow: 1px 1px 1px 1px silver;
+	border-radius: 5px;
+	
+}
+
+.coverName {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	cursor: pointer;
+
+}
+
+
+ul li {
+	border: 1px solid #D9DBDE;
+	margin: 0;
+	padding: 0;
+}
+
+ul li:hover {
+	
+	cursor: pointer;
+	
+}
+.customNavLink:hover {
+	background-color: #01BAFF;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 5px 1px grey;
+	cursor: pointer;
+
+}
+
+.homeLink {
+	text-decoration: none;
+	color: white;
+}
+
+.homeLink:hover {
+	text-decoration: none;
+	font-size: 1.1rem;
+	transition: all 0.3s ease;
+	background-color: white;
+	color: steelblue;
+}
+
+.about {
+	background-color: #EFECEC;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+section .row {
+	border: 1px solid #D9DBDE;
+	background-color: white; 
+	box-shadow: 0 1px 1px 0 grey;
+}
+
+.borderless li {
+	border: none;
+	list-style-type: none;
+	padding: 0.5em;
+}
+
+.favquote {
+	text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 769px){
+	
+	.siZe {
+		font-size: 0.9rem;
+	}
+	.navProfileName {
+		text-align: center;	
+	}
+	.about {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	
+	.siZe {
+		font-size: 0.8rem;
+	}
+	.navProfileName {
+		text-align: center;	
+	}
+	.about {
+		font-size: 1rem;
+	}
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Facebook API Assignment(Feed)</title>
+	<!--stylesheet-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="assets/css/customFeed.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+	<div class="dataContainer">
+
+		<nav class="container-fluid navCustom">
+			<div class="row">
+				<div class="col-12 col-xs-12 col-sm-2 col-md-3 col-lg-4 col-xl-5">
+					
+					<div class="input-group input-group-sm mt-2 txtboxItem">
+						<a href="#" class="navbar-brand">
+							<img src="assets/images/fLogo.jpg" class="img-fluid pb-1 mb-2 logoImage">
+						</a>
+  						<input type="text" class="form-control form-control-sm d-sm-none d-md-block" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  						<div class="input-group-append ">
+    						<button class="btn btn-outline-default d-sm-none d-md-block" type="button"><i class="fa fa-search"></i></button>
+  						</div>
+					</div>
+
+				</div>
+				<div class="col-12 col-xs-12 col-sm-7 col-md-5 col-lg-5 col-xl-5 row">
+					<div class="col-2 p-2 navPicture"></div>
+					<div class="col-8 navProfileName p-2 userName siZe"></div>
+					<div class="col-2 p-2 siZe" style="cursor: pointer; color: white;">Home</div>
+				</div>
+				<div class="col-12 col-xs-12 col-sm-3 col-md-4 col-lg-3 col-xl-2">
+					<div class="navIcons text-center">
+						<i class="fa fa-users col-3 p-3 siZe"></i>
+						<i class="fa fa-comments col-3 p-3 siZe"></i>
+						<i class="fa fa-globe col-3 p-3 siZe"></i>
+					</div>
+				</div>
+			</div>
+			
+
+		</nav>
+
+		<div class="containerOne p-3">
+			<div class="row">
+				
+					<div class="d-none d-sm-none d-md-block col-md-3 col-lg-3 col-xl-3">
+						<div class="row p-1">
+							<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 navPicture pt-1"></div>
+							<div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 navProfileName userName siZeOne" style="color: black;"></div>
+						</div>
+						<div class="row p-1">
+							<div class="col" style="background-color: white; box-shadow: 0 1px 1px 0 grey; border-radius: 2px;">
+								<i class="fas fa-newspaper siZe">&nbsp;News Feed</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fab fa-facebook-messenger siZe" style="font-size: 0.9rem;">&nbsp;<b>Messenger</b></i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-shopping-cart siZe" style="font-size: 0.9rem;">&nbsp;Marketplace</i>
+							</div>
+						</div>
+						<div class="row mt-3 ">
+							<div class="col text-muted">
+								Explore
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-calendar-alt siZe" style="font-size: 0.9rem;">&nbsp; Events</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-users siZe" style="font-size: 0.9rem;">&nbsp; Groups</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-book siZe" style="font-size: 0.9rem;">&nbsp; Pages</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-list siZe" style="font-size: 0.9rem;">&nbsp; Friends List</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-sync siZe" style="font-size: 0.9rem;">&nbsp; On This Day</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-newspaper siZe" style="font-size: 0.9rem;">&nbsp; Pages Feed</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-image siZe" style="font-size: 0.9rem;">&nbsp; Photos</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-gamepad siZe" style="font-size: 0.9rem;">&nbsp; Games</i>
+							</div>
+						</div>
+						<div class="row p-1 hoverActive">
+							<div class="col">
+								<i class="fas fa-ticket-alt siZe" style="font-size: 0.9rem;">&nbsp; Offers</i>
+							</div>
+						</div>
+					</div>
+				
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<div class="row post m-2 p-1">
+
+						<div class="col-12 postHead">
+							<div class="row">
+								<div class="col-3">
+									<i class="fas fa-pencil-alt siZe">&nbsp; Post</i>
+								</div>
+								<div class="col-5">
+									<i class="fas fa-image siZe">&nbsp;Photo Album</i>
+								</div>
+								<div class="col-4">
+									<i class="fas fa-video siZe">&nbsp;Live Video</i>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 m-2">
+							<div class="row">
+								<div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2 navPictureOne pt-2">
+									
+								</div>
+								<div class="col-8 col-sm-9 col-md-9 col-lg-10 col-xl-10">
+									<input class="form-control border-0 p-2" type="text" placeholder="Write something here..."/>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-12 m-1">
+							<div class="row">
+								<div class="col-4 postFoot m-1">
+									<i class="fas fa-image siZe">&nbsp;Photo</i>
+								</div>
+								<div class="col-4 postFoot m-1">
+									<i class="fas fa-smile siZe">&nbsp;Activity</i>
+								</div>
+								<div class="col-2 postFoot m-1 text-center">
+									<i class="fas fa-ellipsis-h siZe"></i>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row post m-2 p-1" id="feedHead">
+					</div>
+
+				</div>
+				<div class="d-none d-sm-none d-md-block col-md-3 col-lg-3 col-xl-3" style="border-left: 1px solid #C8CFCF;">
+					<div class="row">
+						<p class="text-muted pl-5"><b>Contacts</b></p>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">Damodar prajapati</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">brahmananda yadav</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">sampurna kumari</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">ayush roy</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">Narendra prajapati</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">Amit shah</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">darubrahma daitari</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">Damodar prajapati</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">brahmananda yadav</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">sampurna kumari</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">ayush roy</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">Narendra prajapati</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<img class="img-fluid navProfilePicture" src="assets/images/1.jpg">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7">
+							<p class="siZeOne">Amit shah</p>
+						</div>
+						<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-2">
+							<img class="img-fluid onlineBall" src="assets/images/online.png">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		
+	</div>
+	<!--External Scripts-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/customFeed.js"></script>
+</body>
+</html>

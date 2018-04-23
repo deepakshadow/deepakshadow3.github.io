@@ -1,0 +1,133 @@
+:root {
+	font-size: 16px;
+}
+
+body {
+	word-break: keep-all; 
+	margin: 0;
+	padding: 0;
+	background-color: #EAECEE;
+}
+
+.dataContainer {
+	display: none;
+}
+
+.navCustom {
+	background-color: steelblue;
+}
+
+.containerOne {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.logoImage {
+	border-radius: 1px;
+	width: 26px;
+	height: 26px;
+}
+
+.txtboxItem {
+    height: 2em;
+    font-size:1rem;
+}
+
+.navProfilePicture {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	float: right;
+
+}
+
+.navProfilePictureFeed {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.onlineBall {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	float: right;
+
+}
+
+.navProfileName {
+	font-size: 0.95rem;
+	color: white;
+	font-weight: bolder;
+}
+
+
+.navIcons {
+	color: white;
+	cursor: pointer;
+}
+
+.hoverActive:hover {
+	background-color: white;
+	cursor: pointer;
+	box-shadow: 0 1px 1px 0 grey; 
+	border-radius: 2px;
+	width: 85%;
+	transition: all 0.2s ease;
+}
+
+.post {
+	box-shadow: 0 0 1px 0 grey;
+	background-color: white;
+	border-radius: 2px;
+
+
+}
+
+.postHead {
+	background-color: #F1F1F1;
+	box-shadow: 0 0 1px 0 grey;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.postFoot {
+	background-color: #F3F3F3;
+	border-radius: 10px;
+	color: #727777;
+	cursor: pointer;
+}
+
+.siZeOne {
+	font-size: 0.8rem;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 769px){
+	
+	.containerOne {
+		width: 100%;
+	}
+	.siZe {
+		font-size: 0.9rem;
+	}
+	.navProfileName {
+		text-align: center;	
+	}
+}
+
+@media only screen and (max-width: 480px){
+	
+	.containerOne {
+		width: 100%;
+	}
+	.siZe {
+		font-size: 0.8rem;
+	}
+	.navProfileName {
+		text-align: center;	
+	}
+}
